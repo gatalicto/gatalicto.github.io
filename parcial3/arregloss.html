@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+    <body>
+
+        <h1>JArreglos</h1>
+
+
+        <p>Click en la opcion</p>
+
+        <button onclick="llenar()">LLenar arreglo</button>
+        <button onclick="imprimir()">Imprimir arreglo</button>
+        <button onclick="ordenar()">Ordenar arreglo</button>
+        <button onclick="reversa()">reversa arreglo</button>
+        <button onclick="tabla()">Tablona</button>
+        
+
+        <p id="demo"></p>
+
+        <script>
+            var arreglo=[0,0,0,0,0,0,0,0,0,0];
+            function llenar() {
+                //document.getElementById("demo").innerHTML = "Entraste a la primera opcion";
+                for(i=0;i<10;i++)
+                {
+                    arreglo[i]=Math.floor(Math.random()*100+1);
+                    //document.write(arreglo[i]);
+                   
+                }
+
+            }
+
+            function imprimir() {
+
+                document.getElementById("demo").innerHTML = "El contenido de arreglo<br>"+arreglo;
+            }
+
+            function ordenar() {
+
+                //document.getElementById("demo").innerHTML = "Entraste a la orden";
+                arreglo=arreglo.sort(function(a, b){return a -b});
+                document.getElementById("demo").innerHTML = "El orden del arreglo es:<br>"+arreglo;
+            }
+
+            function reversa() {
+                arreglo=arreglo.reverse();
+                document.getElementById("demo").innerHTML = "La reversa es:<br>"+arreglo;
+            }
+
+            function tabla() {
+                //arreglo=arreglo.reverse();
+                
+                
+                var texto="";
+                texto=texto+"<table border=5px> <tr>";
+                    for(i=0;i<10;i++)
+                    {
+                        texto=texto+"<td>"+arreglo[i]+"<td>";
+
+                    }
+                    texto=texto+"</tr></table>";
+                        document.getElementById("demo").innerHTML = texto;
+
+            }
+
+        </script>
+
+
+
+    </body>
+
+</html>
