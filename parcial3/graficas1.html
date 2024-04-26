@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <body>
+    <div id="myPlot" style="width:100%;max-width:700px"></div>
+    <div id="myPlot2" style="width:100%;max-width:700px"></div>
+    <div id="myPlot3" style="width:100%;max-width:700px"></div>
+    <script>
+    const xArray = ["Progra 1", "Matematicas 1", "Fisica 1", "Pro Web 1", "Ingles v"];/* puedes hacer const x=(al final solo se define la variable)*/
+    const yArray = [8.5, 7.5, 6.3, 10, 9];/* puedes hacer const y=(al final solo se define la variable)*/
+    const yArray2 = [8, 8.5, 9.5, 10, 9];
+    const yArray3 = [ (Math.random()*10)+1, (Math.random()*10)+1, (Math.random()*10)+1, (Math.random()*10)+1, (Math.random()*10)+1];
+    const data = [{
+    x:xArray,
+    y:yArray,
+    type:"bar",
+    orientation:"v",
+    marker: {color:"rgba(0,0,255,0.6)"}/*el ,0.6 quiere decir que es la opacidad del color azul*/
+    }];/*r=red, g=green, b=blue, a=alpha*/
+    const layout = {title:"Primer Parcial"};
+    Plotly.newPlot("myPlot", data, layout);
+
+    const data2 = [{
+    x:xArray,
+    y:yArray2,
+    type:"bar",
+    orientation:"v",
+    marker: {color:"rgba(255,0,0,0.6)"}/*el ,0.6 quiere decir que es la opacidad del color azul*/
+    }];/*r=red, g=green, b=blue, a=alpha*/
+    const layout2 = {title:"Segundo Parcial"};
+    Plotly.newPlot("myPlot2", data2, layout2);
+
+    const data3 = [{
+    x:xArray,
+    y:yArray3,
+    type:"bar",
+    orientation:"v",
+    marker: {color:"rgba(0,255,0,0.6)"}/*el ,0.6 quiere decir que es la opacidad del color azul*/
+    }];/*r=red, g=green, b=blue, a=alpha*/
+    const layout3 = {title:"Posibles calificaciones"};
+    Plotly.newPlot("myPlot3", data3, layout3);
+</script>
+</body>
+</html>
