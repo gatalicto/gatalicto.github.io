@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script>
+        var intentos = 6; // Contador de intentos
+        //var palabra = "papa"; // Palabra que el usuario debe adivinar
+        //var palabraIngresada = ""; // Variable para almacenar la palabra ingresada por el usuario
+
+        function dibujar() {
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+            let correcto= document.forms[0].form.value;
+            if (correcto !='papa') {
+                
+            
+            // Cada vez que se dibuje, se reduce un intento
+            intentos--;
+
+            switch (intentos) {
+                case 5: // Cabeza
+                    ctx.beginPath();
+                    ctx.arc(190, 50, 40, 0, 2 * Math.PI); 
+                    ctx.stroke();
+                    break;
+                case 4: // Mano izquierda
+                    ctx.beginPath();
+                    ctx.moveTo(190,90);
+                    ctx.lineTo(150,140);
+                    ctx.stroke();
+                    break;
+                case 3: // Mano derecha
+                    ctx.beginPath();
+                    ctx.moveTo(200,90);
+                    ctx.lineTo(250,140);
+                    ctx.stroke();
+                    break;
+                case 2: // Cuerpo
+                    ctx.beginPath();
+                    ctx.moveTo(200,230);
+                    ctx.lineTo(196,90);
+                    ctx.stroke();
+                    break;
+                case 1: // Pie derecho
+                    ctx.beginPath();
+                    ctx.moveTo(200,230);
+                    ctx.lineTo(236,280);
+                    ctx.stroke();
+                    break;
+                case 0: // Pie izquierdo
+                    ctx.beginPath();
+                    ctx.moveTo(200,230);
+                    ctx.lineTo(160,280);
+                    ctx.stroke();
+                    alert("Perdiste loco"); // Se agotaron los intentos
+                    break;
+            }
+            }
+            // Si la palabra ingresada por el usuario coincide con la palabra correcta
+            if (correcto =='papa') {
+                alert("Ha ganado");
+                limpiar();
+            }
+        }
+
+        function limpiar() {
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+            ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpiar el lienzo
+            intentos = 6; // Reiniciar el contador de intentos
+            correcto = ""; // Reiniciar la palabra ingresada por el usuario
+        }
+
+        /*function verificarPalabra() {
+            palabraIngresada = prompt("Ingrese la palabra:");
+            dibujar(); // Llamar a la función dibujar para verificar si la palabra es correcta
+        }*/
+    </script>
+</head>
+<body>
+    <h1>Ahorcado Parte I</h1>
+    <canvas id="myCanvas" width="400" height="400" style="border:1px solid red";></canvas>
+    <form id="myform" onsubmit="return dibujar();">
+        Dame la palabra<input id="form" name="form" type="text" />
+    </form>
+    <p><button onclick="dibujar()">Verificar Palabra</button></p>
+    <button onclick="limpiar()">Limpiar</button>
+   
+</body>
+</html>
