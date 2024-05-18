@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicios Avanzados 2</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: pink;
+    }
+    
+    #titulo {
+        text-align: center;
+        font-size: 36px;
+        margin-top: 50px;
+    }
+    
+    .rectangulo-lila {
+        width: 100%;
+        height: 100px; /* Puedes ajustar la altura según tus necesidades */
+        background-color: #8a2be2;
+        position: relative;
+        text-align: center;
+        line-height: 100px;
+        color: yellow;
+        font-size: 24px;
+        cursor: pointer;
+        box-sizing: border-box;
+        border-bottom: 1px solid white; /* Añadido para separar los rectángulos */
+        transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+        margin-top: 50px;
+    }
+    
+    .rectangulo-lila:hover {
+        background-color:  rgb(76, 5, 101);
+        color: yellow;
+    }
+    
+    .rectangulo-negro {
+        width: 100%;
+        height: 100px; /* Puedes ajustar la altura según tus necesidades */
+        background-color: rgb(76, 5, 101);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        text-align: center;
+        line-height: 100px;
+        color: yellow;
+        font-size: 24px;
+    }
+    
+    .rectangulo-lila a {
+        text-decoration: none;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div id="titulo">Ejercicios Avanzados 2</div>
+    <div class="rectangulo-lila" onclick="window.location.href='avancss/reto1css.html'">
+        <a href="avancss/reto1css.html"> reto css 1</a>
+        <div class="rectangulo-negro">
+            <a href="avancss/reto1css.html">reto css 1</a>
+        </div>
+    </div>
+    <div class="rectangulo-lila" onclick="window.location.href='avancss/citas.html'">
+        <a href="avancss/citas.html">Citas</a>
+        <div class="rectangulo-negro">
+            <a href="avancss/citas.html">Citas</a>
+        </div>
+    </div>
+    <div class="rectangulo-lila" onclick="window.location.href='avancss/londres.html'">
+        <a href="avancss/londres.html">Londres</a>
+        <div class="rectangulo-negro">
+            <a href="avancss/londres.html">Londres</a>
+        </div>
+    </div>
+
+</body>
+</html
