@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Formulario Primer contacto Tutorias</h1>
+        <form action="mailto: 185003@upslp.edu.mx" method="post">
+            <p>Nombre<input type= "text" name="nombre" size="100"></p>
+            <p>Matricula<input type= "number" name="matricula" min="180000"></p>
+            <p>Semestre 
+                <input type="radio" name="sem" value="1">1
+                <input type="radio" name="sem" value="2">2
+                <input type="radio" name="sem" value="3">3
+                <input type="radio" name="sem" value="4">4
+                <input type="radio" name="sem" value="5">5
+                <input type="radio" name="sem" value="6">6
+                <input type="radio" name="sem" value="7">7
+                <input type="radio" name="sem" value="8">8
+                <input type="radio" name="sem" value="9">9
+                <input type="radio" name="sem" value="9+">9+
+            </p>
+            <p>Fecha<input type="date" name="Fecha"></p>
+            <p>MATERIA 1 SEMESTRE<input type= "text" name="mat1" size="20"></p>
+            <p>MATERIA 2 SEMESTRE<input type= "text" name="mat2" size="20"></p>
+            <p>MATERIA 3 SEMESTRE<input type= "text" name="mat3" size="20"></p>
+            <p>MATERIA 4 SEMESTRE<input type= "text" name="mat4" size="20"></p>
+            <p>MATERIA 5 SEMESTRE<input type= "text" name="mat5" size="20"></p>
+            <p>MATERIA 6 SEMESTRE<input type= "text" name="mat6" size="20"></p>
+
+            <p>CAL.MATERIA1<input type="number" name="cmat1" min="0" max="10"></p>
+            <p>CAL.MATERIA2<input type="number" name="cmat2" min="0" max="10"></p>
+            <p>CAL.MATERIA3<input type="number" name="cmat3" min="0" max="10"></p>
+            <p>CAL.MATERIA4<input type="number" name="cmat4" min="0" max="10"></p>
+            <p>CAL.MATERIA5<input type="number" name="cmat5" min="0" max="10"></p>
+            <p>CAL.MATERIA6<input type="number" name="cmat6" min="0" max="10"></p>
+            <p>Motivo por el que reprobaste materias
+                <textarea name="motivos" cols="100" rows="4" placeholder="Aqui escribe tu comentario"></textarea> 
+            </p>
+            <p>Como evaluas tu desempeño del semestre anterior
+                <input type="radio" name="des" value="malo">malo
+                <input type="radio" name="des" value="regular">regular
+                <input type="radio" name="des" value="bueno">bueno
+                <input type="radio" name="des" value="excelente">excelente
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </p>
+        </form>
+    </body>
+</html>
