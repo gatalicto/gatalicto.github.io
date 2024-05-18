@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicios Avanzados</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: pink;
+    }
+    
+    #titulo {
+        text-align: center;
+        font-size: 36px;
+        margin-top: 50px;
+    }
+    
+    .rectangulo-lila {
+        width: 100%;
+        height: 100px; /* Puedes ajustar la altura según tus necesidades */
+        background-color: #8a2be2;
+        position: relative;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        box-sizing: border-box;
+        border-bottom: 1px solid white; /* Añadido para separar los rectángulos */
+        transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+        margin-top: 50px;
+    }
+    
+    .rectangulo-lila:hover {
+        background-color: black;
+    }
+    
+    .rectangulo-negro {
+        width: 100%;
+        height: 100px; /* Puedes ajustar la altura según tus necesidades */
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        font-size: 24px;
+    }
+    
+    .rectangulo-lila a {
+        text-decoration: none;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div id="titulo">Ejercicios Avanzados</div>
+    <div class="rectangulo-lila" onclick="window.location.href='otra_pagina1.html'">
+        <a href="otra_pagina1.html">Practica 1</a>
+        <div class="rectangulo-negro">
+            <a href="Index.html">Practica 1</a>
+        </div>
+    </div>
+    <div class="rectangulo-lila" onclick="window.location.href='do2semes.html'">
+        <a href="do2semes.html">Practica 2</a>
+        <div class="rectangulo-negro">
+            <a href="do2semes.html">Practica 2</a>
+        </div>
+    </div>
+    <div class="rectangulo-lila" onclick="window.location.href='otra_pagina3.html'">
+        <a href="otra_pagina3.html">Practica 3</a>
+        <div class="rectangulo-negro">
+            <a href="otra_pagina.html">Practica 3</a>
+        </div>
+    </div>
+
+    <div class="rectangulo-lila" onclick="window.location.href='otra_pagina3.html'">
+        <a href="otra_pagina3.html">Canción</a>
+        <div class="rectangulo-negro">
+            <a href="otra_pagina.html">Canción</a>
+        </div>
+    </div>
+</body>
+</html>

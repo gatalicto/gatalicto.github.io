@@ -1,0 +1,86 @@
+body {
+  padding: 0 50px;
+  background-color: hwb(296 92% 2%);
+  text-align: justify;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Tangerine', serif;;
+  font-size: 3rem;
+  text-align: center;
+  color: blueviolet;
+  
+}
+
+h2 {
+  margin: 0;
+  color:hwb(286 50% 30%);
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-shadow: 3px 3px black;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+strong {
+  padding: 0 10px;
+  background-color: white;
+  color: rgb(140, 0, 255);
+}
+
+i {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(255, 0, 212);
+}
+
+time {
+  color: rgb(255, 0, 212);
+}
+
+img {
+  border: hwb(281 50% 30%) 5px solid;
+  padding: 5px;
+}
+
+img.izquierda {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+img.derecha {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+p.izquierda {
+  float: left;
+  width: 33%;
+}
+
+p.centrado {
+  text-align: center;
+}
+
+hr {
+  clear: both;
+  width: 66%;
+  height: 10px;
+  border: rgb(70, 78, 95) 1px solid;
+  border-radius: 5px;
+  margin: 40px auto;
+  background-color: hwb(288 50% 30%);
+}
+
+address {
+  text-align: right;
+  font-style: normal
+}
