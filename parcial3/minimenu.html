@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 
 <html>
-
+<head>
+    <style>
+        body{
+            background-color: rgb(248, 234, 109);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header{
+            background-color: rgb(236, 217, 43);
+        }
+    </style>
+</head>
     <body>
-
+            <header>
+            <center>
+            <h1>
+                Portafolio tercer parcial
+            </h1>
+            <h4>
+                Hector Josue Gómez Salazar
+            </h4>
+            </center>
+        </header>
+        <center>
         <h1>Minimenu</h1>
 
 
         <p>Click en la opcion</p>
+<table>
+    <tr>
+        <td><button onclick="cero()">Ejercicio0</button></td>
+        <td><button onclick="uno()">Ejercicio 1</button></td>
+        <td><button onclick="dos()">Ejercicio 2</button></td>
+        <td><button onclick="tres()">Ejercicio 3</button></td>
+        <td><button onclick="cuatro()">Ejercicio 4</button></td>
+        <td><button onclick="cinco()">Ejercicio 5</button></td>
+        <td><button onclick="seis()">Ejercicio 6</button></td>
+        <td><button onclick="siete()">Ejercicio 7</button></td>
+        <td><button onclick="ocho()">Ejercicio 8</button></td>
+        <td><button onclick="nueve()">Ejercicio 9</button></td>
+        <td><button onclick="diez()">Ejercicio 10</button></td>
+     </tr>   
+    <p id="demo"></p>
+</table>
 
-        <button onclick="cero()">Ejercicio0</button>
-        <button onclick="uno()">Ejercicio 1</button>
-        <button onclick="dos()">Ejercicio 2</button>
-        <button onclick="tres()">Ejercicio 3</button>
-        <button onclick="cuatro()">Ejercicio 4</button>
-        <button onclick="cinco()">Ejercicio 5</button>
-        <button onclick="seis()">Ejercicio 6</button>
-        <button onclick="siete()">Ejercicio 7</button>
-        <button onclick="ocho()">Ejercicio 8</button>
-        <button onclick="nueve()">Ejercicio 9</button>
-        <button onclick="diez()">Ejercicio 10</button>
-        <button onclick="once()">Ejercicio 11</button>
-        <button onclick="doce()">Ejercicio 12</button>
-        <button onclick="trece()">Ejercicio 13</button>
-        <button onclick="catorce()">Ejercicio 14</button>
-        <button onclick="quince()">Ejercicio 15</button>
-        <button onclick="dieciseis()">Ejercicio 16</button>
-        <button onclick="diecisiete()">Infografia</button>
-        <button onclick="dieciocho()">Ejercicio18</button>
-        <button onclick="diecinueve()">Ejercicio19</button>
-        <button onclick="veinte()">Ejercicio20</button>
-        <button onclick="veinteyuno()">Ejercicio21</button>
-        <button onclick="veinteydos()">Examen</button>
-
+<table>
+    <tr>
+         <td><button onclick="once()">Ejercicio 11</button></td>
+         <td><button onclick="doce()">Ejercicio 12</button></td>
+         <td><button onclick="trece()">Ejercicio 13</button></td>
+         <td><button onclick="catorce()">Ejercicio 14</button></td>
+         <td><button onclick="quince()">Ejercicio 15</button></td>
+         <td><button onclick="dieciseis()">Ejercicio 16</button></td>
+         <td><button onclick="diecisiete()">Infografia</button></td>
+         <td><button onclick="dieciocho()">Ejercicio18</button></td>
+        <td> <button onclick="diecinueve()">Ejercicio19</button></td>
+         <td><button onclick="veinte()">Ejercicio20</button></td>
+         <td><button onclick="veinteyuno()">Ejercicio21</button></td>
+         <td><button onclick="veinteydos()">Examen</button></td>
+    </tr>
         <p id="demo"></p>
-
+</table>
+            </center>
         <script>
             function cero() {
                 document.getElementById("demo").innerHTML = "<a href='https://gatalicto.github.io/ejercicio001.html'>Ejercicio0</a>";
