@@ -1,0 +1,60 @@
+html {
+    background-color: hwb(150 25% 30%);
+    font-family:capitalize ;
+    line-height: 125%;
+    text-align: justify;
+    hyphens: auto;
+}
+
+section {
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: flex-start;
+}
+
+article {
+    display: flex;
+    flex-direction: row ;
+    width: 500px ;
+    margin: 80px ;
+    border: black 5px solid;
+    background-color: hwb(150 50% 30%);
+    
+}
+
+h2 {
+    margin:hwb(150 25% 30%) ;
+    padding: 3px ;
+    border-right: black 1px solid;
+}
+
+div {
+    margin:5px ;
+}
+
+p::first-letter {
+  float: left;
+  color: hwb(137 0% 60%);
+  font-size: 5rem;
+  font-style: normal;
+  line-height: 3rem; 
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+
+
